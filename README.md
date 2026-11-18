@@ -1,4 +1,7 @@
-# 🐾 Tilcayo: Pesadilla en Sistemas — *2D Cyberpunk-Halloween Action Platformer*
+# Tilcayo: Pesadilla en Sistemas — *2D Cyberpunk-Halloween Action Platformer*
+
+[![Jugar Ahora](https://img.shields.io/badge/JUGAR%20AHORA%20%E2%9E%94-222222?style=for-the-badge)](https://eduardoviscarra.itch.io/tilcayo-pesadilla-en-sistemas) [![Play on Itch.io](https://img.shields.io/badge/Itch.io-eduardoviscarra.itch.io%2Ftilcayo--pesadilla--en--sistemas-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white)](https://eduardoviscarra.itch.io/tilcayo-pesadilla-en-sistemas)
+[![Download Release](https://img.shields.io/badge/GitHub%20Release-Windows%20Build%20v1.0.0-2ea44f?style=for-the-badge&logo=github)](https://github.com/Gabosito1314/Tilcayo_GameJam/releases/tag/v1.0.0)
 
 ![Unity 6](https://img.shields.io/badge/Engine-Unity%206%20(6000.6.4f1)-black?logo=unity)
 ![Language](https://img.shields.io/badge/Language-C%23%20(.NET)-239120?logo=csharp)
@@ -23,11 +26,11 @@
 
 ---
 
-## 📋 Ficha Técnica
+## Ficha Técnica
 
 | Atributo | Detalle |
 | :--- | :--- |
-| **Motor & Versión** | Unity 6 (`6000.6.4f1`) — Universal Render Pipeline (URP 2D) |
+| **Motor y Versión** | Unity 6 (`6000.6.4f1`) — Universal Render Pipeline (URP 2D) |
 | **Lenguaje** | C# (Namespaces modulares: `Tilcayo.Core`, `Tilcayo.Player`, `Tilcayo.Environment`, `Tilcayo.Enemies`, `Tilcayo.Camera`, `Tilcayo.Editor`) |
 | **Género** | 2D Action & Puzzle Platformer (Game Jam Project) |
 | **Sistemas Destacados** | Mecánica de Teletransporte en 2 fases con Validación Física Anti-Stuck (`OverlapBox`), Arquitectura Desacoplada por Bus de Eventos (`GameEvents`), Pipeline de Automatización en `UnityEditor` |
@@ -35,13 +38,13 @@
 
 ---
 
-## 🏗️ Arquitectura Desacoplada por Bus de Eventos (`GameEvents`)
+## Arquitectura Desacoplada por Bus de Eventos (`GameEvents`)
 
-Para mantener los subsistemas de Gameplay, UI, Audio y Progresión completamente independientes (evitando referencias cruzadas rígidas entre componentes), el proyecto implementa un **Event Bus estático centralizado** en [`GameEvents.cs`](Assets/_Project/Scripts/Core/GameEvents.cs).
+Para mantener los subsistemas de Gameplay, UI, Audio y Progresión independientes (evitando referencias cruzadas rígidas entre componentes), el proyecto implementa un **Event Bus estático centralizado** en [`GameEvents.cs`](Assets/_Project/Scripts/Core/GameEvents.cs).
 
 ```mermaid
 flowchart LR
-    subgraph Player["🐾 Player Subsystem (Tilcayo.Player)"]
+    subgraph Player["Player Subsystem (Tilcayo.Player)"]
         TC["TilcayoController.cs"]
         PM["PlayerMovement2D.cs"]
         STP["SlimeTPAbility.cs"]
@@ -49,17 +52,17 @@ flowchart LR
         PH["PlayerHealth.cs"]
     end
 
-    subgraph EventBus["⚡ Static Event Bus (Tilcayo.Core)"]
+    subgraph EventBus["Static Event Bus (Tilcayo.Core)"]
         GE(("GameEvents.cs<br/>Desacoplamiento Total"))
     end
 
-    subgraph Core["🎮 Core & Managers (Tilcayo.Core)"]
+    subgraph Core["Core & Managers (Tilcayo.Core)"]
         GM["GameManager.cs<br/>Checkpoints, Respawn, Progresión"]
         UIM["UIManager.cs<br/>HUD Reactivo, Cooldown, Vidas"]
         SM["SoundManager.cs<br/>SFX & Música"]
     end
 
-    subgraph Env["陷阱 Environment & Enemies"]
+    subgraph Env["Environment & Enemies"]
         CP["TerminalCheckpoint.cs"]
         CD["CollectibleDisk.cs"]
         PE["PatrolEnemy2D.cs"]
@@ -77,10 +80,10 @@ flowchart LR
 
 ---
 
-## 🎯 Retos Técnicos y Sistemas Clave (Code Highlights)
+## Retos Técnicos y Sistemas Clave (Code Highlights)
 
 ### 1. Mecánica Insignia: Teletransporte en 2 Fases (`Slime TP`) y Validación Anti-Stuck
-📄 **Código fuente:** [`SlimeTPAbility.cs`](Assets/_Project/Scripts/Player/SlimeTPAbility.cs) · [`CodeOozeCrawler.cs`](Assets/_Project/Scripts/Player/CodeOozeCrawler.cs)
+**Código fuente:** [`SlimeTPAbility.cs`](Assets/_Project/Scripts/Player/SlimeTPAbility.cs) · [`CodeOozeCrawler.cs`](Assets/_Project/Scripts/Player/CodeOozeCrawler.cs)
 
 La mecánica central del juego permite a Tilcayo expulsar una "baba de código viviente" que avanza horizontalmente ignorando trampas mortales (`sierras`, `pinchos`, `rejas`) y se materializa en un clon verde (`SlimeTilcayo`) hacia el cual el jugador puede teletransportarse al instante:
 * **Matriz de Colisión por Layer Dedicada (`CloneSlime`):** [`CodeOozeCrawler.cs`](Assets/_Project/Scripts/Player/CodeOozeCrawler.cs) se asigna dinámicamente a la capa física `CloneSlime`, la cual colisiona con suelos y muros sólidos (`solidObstacleMask`) pero atraviesa los peligros (`Hazard2D`) y enemigos.
@@ -96,7 +99,7 @@ La mecánica central del juego permite a Tilcayo expulsar una "baba de código v
 ---
 
 ### 2. Arquitectura por Bus de Eventos (`GameEvents`) y Persistencia de Checkpoints
-📄 **Código fuente:** [`GameEvents.cs`](Assets/_Project/Scripts/Core/GameEvents.cs) · [`GameManager.cs`](Assets/_Project/Scripts/Core/GameManager.cs) · [`UIManager.cs`](Assets/_Project/Scripts/Core/UIManager.cs)
+**Código fuente:** [`GameEvents.cs`](Assets/_Project/Scripts/Core/GameEvents.cs) · [`GameManager.cs`](Assets/_Project/Scripts/Core/GameManager.cs) · [`UIManager.cs`](Assets/_Project/Scripts/Core/UIManager.cs)
 
 * **Cero `Update()` innecesarios en UI:** [`UIManager.cs`](Assets/_Project/Scripts/Core/UIManager.cs) actualiza las caras de vida de Tilcayo, el medidor circular de enfriamiento de la habilidad (`OnCooldownUpdate(float percent)`), el contador de disquetes (`OnDiskCollected`) y la barra del jefe únicamente en respuesta a eventos de [`GameEvents.cs`](Assets/_Project/Scripts/Core/GameEvents.cs).
 * **Gestión de Estado y Respawn con Feedback Visual (`Dazed State`):** [`GameManager.cs`](Assets/_Project/Scripts/Core/GameManager.cs) persiste entre cargas (`DontDestroyOnLoad`), restaura la contabilidad exacta de disquetes al reiniciar desde una terminal ([`TerminalCheckpoint.cs`](Assets/_Project/Scripts/Environment/TerminalCheckpoint.cs)) y activa el estado `ShouldRespawnDazed` para que Tilcayo reaparezca con una animación de aturdimiento temporal antes de retomar la acción.
@@ -104,7 +107,7 @@ La mecánica central del juego permite a Tilcayo expulsar una "baba de código v
 ---
 
 ### 3. Controlador de Personaje 2D y Optimización de `Animator`
-📄 **Código fuente:** [`TilcayoController.cs`](Assets/_Project/Scripts/Player/TilcayoController.cs) · [`PlayerMovement2D.cs`](Assets/_Project/Scripts/Player/PlayerMovement2D.cs) · [`PlayerHealth.cs`](Assets/_Project/Scripts/Player/PlayerHealth.cs) · [`PlayerInputReader.cs`](Assets/_Project/Scripts/Player/PlayerInputReader.cs)
+**Código fuente:** [`TilcayoController.cs`](Assets/_Project/Scripts/Player/TilcayoController.cs) · [`PlayerMovement2D.cs`](Assets/_Project/Scripts/Player/PlayerMovement2D.cs) · [`PlayerHealth.cs`](Assets/_Project/Scripts/Player/PlayerHealth.cs) · [`PlayerInputReader.cs`](Assets/_Project/Scripts/Player/PlayerInputReader.cs)
 
 * **Separación de Responsabilidades (SRP):** El jugador no es un "God Script" monolítico, sino 4 componentes cohesivos forzados por `[RequireComponent(typeof(PlayerMovement2D), typeof(SlimeTPAbility), typeof(PlayerHealth))]`:
   * [`PlayerInputReader.cs`](Assets/_Project/Scripts/Player/PlayerInputReader.cs): Capa de abstracción de entrada compatible con teclado y mando.
@@ -115,7 +118,7 @@ La mecánica central del juego permite a Tilcayo expulsar una "baba de código v
 ---
 
 ### 4. Pipeline Integral de Automatización en `UnityEditor` (`ProjectSetupTools`)
-📄 **Código fuente:** [`Assets/_Project/Scripts/Editor/ProjectSetupTools.cs`](Assets/_Project/Scripts/Editor/ProjectSetupTools.cs)
+**Código fuente:** [`Assets/_Project/Scripts/Editor/ProjectSetupTools.cs`](Assets/_Project/Scripts/Editor/ProjectSetupTools.cs)
 
 Para evitar errores manuales de configuración en el equipo durante la Game Jam, se desarrolló una herramienta de editor (`Tilcayo.Editor.ProjectSetupTools`) accesible desde el menú superior **`Tilcayo/*`**:
 * Configura automáticamente **Layers**, **Sorting Layers** y la **Matriz de Colisiones 2D** de Unity.
@@ -124,7 +127,7 @@ Para evitar errores manuales de configuración en el equipo durante la Game Jam,
 
 ---
 
-## 📂 Estructura del Código (`Assets/_Project/Scripts/`)
+## Estructura del Código (`Assets/_Project/Scripts/`)
 
 ```text
 Assets/_Project/Scripts/
@@ -157,7 +160,7 @@ Assets/_Project/Scripts/
 
 ---
 
-## 🎮 Controles
+## Controles
 
 | Acción | Control |
 | :--- | :--- |
@@ -168,10 +171,11 @@ Assets/_Project/Scripts/
 
 ---
 
-## 🚀 Descarga Jugable & Cómo Abrir el Proyecto en Unity
+## Jugar Ahora y Cómo Abrir el Proyecto en Unity
 
-* 🎮 **Build Jugable (Windows `.zip`):** Disponible en la sección [**Releases**](https://github.com/Gabosito1314/Tilcayo_GameJam/releases) de este repositorio.
-* 📄 **Game Design Document (GDD):** Incluido en la raíz del repositorio ([`GDD_Tilcayo_Pesadilla_en_Sistemas.docx`](GDD_Tilcayo_Pesadilla_en_Sistemas.docx)).
+* **Página Oficial en Itch.io (Jugar / Descargar):** [**eduardoviscarra.itch.io/tilcayo-pesadilla-en-sistemas**](https://eduardoviscarra.itch.io/tilcayo-pesadilla-en-sistemas)
+* **Build Jugable Directa (Windows `.zip`):** Disponible en [**GitHub Releases (v1.0.0)**](https://github.com/Gabosito1314/Tilcayo_GameJam/releases/tag/v1.0.0).
+* **Game Design Document (GDD):** Incluido en la raíz del repositorio ([`GDD_Tilcayo_Pesadilla_en_Sistemas.docx`](GDD_Tilcayo_Pesadilla_en_Sistemas.docx)).
 
 ### Abrir el Código Fuente en Unity 6
 1. Clonar este repositorio:
@@ -184,6 +188,6 @@ Assets/_Project/Scripts/
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
-**Gabriel Viscarra** ([@Gabosito1314](https://github.com/Gabosito1314)) — *Unity / C# Gameplay & Systems Programmer*
+**Eduardo Gabriel Viscarra Quisbert** — [GitHub `@Gabosito1314`](https://github.com/Gabosito1314) · [Itch.io `eduardoviscarra.itch.io`](https://eduardoviscarra.itch.io/) — *Desarrollador de Videojuegos en Unity (2D / 3D) & Game Designer*
