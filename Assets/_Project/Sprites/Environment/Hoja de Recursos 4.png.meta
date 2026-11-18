@@ -1,0 +1,665 @@
+fileFormatVersion: 2
+guid: cd29ad753c5ca3f4f94ef23e77f9c60e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7667414057124643639
+    second: Hoja de Recursos 4_0
+  - first:
+      213: 5936794299896078609
+    second: Hoja de Recursos 4_1
+  - first:
+      213: -3943179209951616186
+    second: Hoja de Recursos 4_2
+  - first:
+      213: -1411080773049738228
+    second: Hoja de Recursos 4_3
+  - first:
+      213: -1381985179707613726
+    second: Hoja de Recursos 4_4
+  - first:
+      213: -1489225944348286277
+    second: Hoja de Recursos 4_5
+  - first:
+      213: -5866891825005543163
+    second: Hoja de Recursos 4_6
+  - first:
+      213: 4897195790860601440
+    second: Hoja de Recursos 4_7
+  - first:
+      213: -6108732139889761414
+    second: Hoja de Recursos 4_8
+  - first:
+      213: 5126577726566132346
+    second: Hoja de Recursos 4_9
+  - first:
+      213: 1341262383750789355
+    second: Hoja de Recursos 4_10
+  - first:
+      213: 2452513054614787611
+    second: Hoja de Recursos 4_11
+  - first:
+      213: 3447317271991179119
+    second: Hoja de Recursos 4_12
+  - first:
+      213: -8942179825596197760
+    second: Hoja de Recursos 4_13
+  - first:
+      213: 7131703347535934873
+    second: Hoja de Recursos 4_14
+  - first:
+      213: -5185857525670548474
+    second: Hoja de Recursos 4_15
+  - first:
+      213: -7361794760382332340
+    second: Hoja de Recursos 4_16
+  - first:
+      213: 568382376308084881
+    second: Hoja de Recursos 4_17
+  - first:
+      213: 2380810900829500697
+    second: Hoja de Recursos 4_18
+  - first:
+      213: -2697988770904019176
+    second: Hoja de Recursos 4_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 565
+        width: 445
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccbf3be98fd79590800000000000000
+      internalID: -7667414057124643639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 565
+        width: 424
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111aed516fab36250800000000000000
+      internalID: 5936794299896078609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_2
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 778
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643e02186630749c0800000000000000
+      internalID: -3943179209951616186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_3
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 588
+        width: 151
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c9cfc5385da6ce0800000000000000
+      internalID: -1411080773049738228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_4
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 548
+        width: 370
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed5ca61dc332dce0800000000000000
+      internalID: -1381985179707613726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_5
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 820
+        width: 114
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb223d4d4e4355be0800000000000000
+      internalID: -1489225944348286277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 763
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501c6e228fc949ea0800000000000000
+      internalID: -5866891825005543163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_7
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 592
+        width: 200
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068c8c510a556f340800000000000000
+      internalID: 4897195790860601440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_8
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 752
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73ebd5fb7c693ba0800000000000000
+      internalID: -6108732139889761414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_9
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 713
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a6761d743452740800000000000000
+      internalID: 5126577726566132346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_10
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 654
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be83f0e180f1d9210800000000000000
+      internalID: 1341262383750789355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_11
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 600
+        width: 46
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16925311a3190220800000000000000
+      internalID: 2452513054614787611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_12
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 629
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f675a115bc457df20800000000000000
+      internalID: 3447317271991179119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_13
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 579
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0849ca983def6e380800000000000000
+      internalID: -8942179825596197760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_14
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 586
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995f751c866e8f260800000000000000
+      internalID: 7131703347535934873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_15
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 540
+        width: 103
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cee966e022808b0800000000000000
+      internalID: -5185857525670548474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 272
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42441e7ba6a5d990800000000000000
+      internalID: -7361794760382332340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_17
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 55
+        width: 238
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1909f6482cc43e700800000000000000
+      internalID: 568382376308084881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_18
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 72
+        width: 655
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915f15576e65a0120800000000000000
+      internalID: 2380810900829500697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja de Recursos 4_19
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 35
+        width: 494
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fe546e181de8ad0800000000000000
+      internalID: -2697988770904019176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hoja de Recursos 4_0: -7667414057124643639
+      Hoja de Recursos 4_1: 5936794299896078609
+      Hoja de Recursos 4_10: 1341262383750789355
+      Hoja de Recursos 4_11: 2452513054614787611
+      Hoja de Recursos 4_12: 3447317271991179119
+      Hoja de Recursos 4_13: -8942179825596197760
+      Hoja de Recursos 4_14: 7131703347535934873
+      Hoja de Recursos 4_15: -5185857525670548474
+      Hoja de Recursos 4_16: -7361794760382332340
+      Hoja de Recursos 4_17: 568382376308084881
+      Hoja de Recursos 4_18: 2380810900829500697
+      Hoja de Recursos 4_19: -2697988770904019176
+      Hoja de Recursos 4_2: -3943179209951616186
+      Hoja de Recursos 4_3: -1411080773049738228
+      Hoja de Recursos 4_4: -1381985179707613726
+      Hoja de Recursos 4_5: -1489225944348286277
+      Hoja de Recursos 4_6: -5866891825005543163
+      Hoja de Recursos 4_7: 4897195790860601440
+      Hoja de Recursos 4_8: -6108732139889761414
+      Hoja de Recursos 4_9: 5126577726566132346
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
